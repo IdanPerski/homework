@@ -1,0 +1,66 @@
+header {
+    @include navBar_header(100vw, 60px, $mob_backcolor);
+    border: solid 1.8px;
+
+
+
+    ul {
+        @include navBar_ul(flex, column, 100vw, 60px auto, absolute);
+        border: 2px solid;
+        transform: translateX(100%);
+
+
+        li {
+            @include navBar_li(20px auto, 1.5);
+
+            a {
+                @extend %mainAnker;
+            }
+        }
+    }
+
+    .burger {
+        @extend %burger;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .burger {
+        display: none;
+    }
+
+    header {
+        @include navBar_header(100vw, 60px, $tab_backcolor);
+
+        ul {
+            @include navBar_ul(flex, row, 70vw, -5px auto, relative);
+            transform: revert;
+            border: none;
+
+            li {
+                @include navBar_li(20px auto, 1.5);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .burger {
+        display: none;
+    }
+
+    header {
+        @include navBar_header(100vw, 60px, $desk_backcolor);
+
+        // ul {
+        //     @include navBar_ul(flex, row, 70vw, -5px auto, relative);
+        //     transform: revert;
+        //     border: none;
+
+        //     li {
+        //         @include navBar_li(20px auto, 1.5);
+        //     }
+        // }
+    }
+}

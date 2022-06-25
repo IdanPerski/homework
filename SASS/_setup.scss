@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+$mob_backcolor:rgba(10, 104, 167, 0.733);
+$tab_backcolor:rgba(21, 118, 94, 0.733);
+$desk_backcolor:rgba(82, 118, 21, 0.733);
+
+
+///NAVBAR///
+
+@mixin navBar_header($width, $height, $bgc) {
+
+    height: $height;
+    width: $width;
+    background-color: $bgc;
+}
+
+@mixin navBar_ul($display, $flxDrct, $width, $ul_margin, $postion) {
+    display: $display;
+    flex-direction: $flxDrct;
+    width: $width;
+    margin: $ul_margin;
+    position: $postion;
+    border: 1.8px;
+
+}
+
+@mixin navBar_li($liMargin, $li_lineHeight) {
+    display: block;
+    list-style: none;
+    margin: $liMargin;
+    line-height: $li_lineHeight;
+
+}
+
+%mainAnker {
+    text-decoration: none;
+    color: black;
+    transition: 0.25s;
+
+    &:hover {
+        color: tomato;
+        font-weight: bold;
+    }
+
+}
+
+%burger {
+    float: right;
+    margin: 5px 15px;
+    cursor: pointer;
+    font-size: 2.2rem;
+
+}
