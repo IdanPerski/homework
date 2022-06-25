@@ -9,6 +9,7 @@ header ul li a {
   color: black;
   transition: 0.25s;
 }
+
 header ul li a:hover {
   color: tomato;
   font-weight: bold;
@@ -24,9 +25,10 @@ header .burger {
 header {
   height: 60px;
   width: 100vw;
-  background-color: rgba(10, 104, 167, 0.733);
+  background-color: rgba(10, 104, 167, 0.7);
   border: solid 1.8px;
 }
+
 header ul {
   display: flex;
   flex-direction: column;
@@ -37,12 +39,14 @@ header ul {
   border: 2px solid;
   transform: translateX(100%);
 }
+
 header ul li {
   display: block;
   list-style: none;
   margin: 20px auto;
   line-height: 1.5;
 }
+
 @media only screen and (min-width: 768px) {
   .burger {
     display: none;
@@ -51,8 +55,9 @@ header ul li {
   header {
     height: 60px;
     width: 100vw;
-    background-color: rgba(21, 118, 94, 0.733);
+    background-color: rgba(21, 118, 94, 0.7);
   }
+
   header ul {
     display: flex;
     flex-direction: row;
@@ -63,6 +68,7 @@ header ul li {
     transform: revert;
     border: none;
   }
+
   header ul li {
     display: block;
     list-style: none;
@@ -70,14 +76,16 @@ header ul li {
     line-height: 1.5;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .burger {
     display: none;
   }
 
   header {
-    height: 60px;
-    width: 100vw;
-    background-color: rgba(82, 118, 21, 0.733);
+
+    background-color: rgba(82, 118, 21, 0.7);
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
